@@ -1,0 +1,137 @@
+/* Reset padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão para todo o corpo */
+    background-color: #f4f4f4; /* Cor de fundo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    overflow-x: hidden; /* Evita rolagem horizontal na página */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    flex-direction: column; /* Coluna principal, para distribuir conteúdo */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
+}
+
+/* Container principal que abriga o menu lateral e o conteúdo */
+.wrapper {
+    display: flex;
+    flex: 1; /* Ocupa todo o espaço vertical disponível */
+}
+
+/* Menu lateral fixo */
+#sidebar {
+    width: 250px; /* Largura do menu lateral */
+    background: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    transition: all 0.3s; /* Transição suave para efeitos visuais */
+    position: fixed; /* Fixa o menu lateral */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    bottom: 0; /* Estende até o final da viewport */
+    z-index: 1000; /* Garante que o menu esteja acima do conteúdo principal */
+    overflow-y: auto; /* Adiciona rolagem vertical ao menu quando necessário */
+}
+
+/* Cabeçalho do menu lateral */
+#sidebar .sidebar-header {
+    padding: 5px; /* Preenchimento interno */
+    background: #444; /* Cor de fundo do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Logo no cabeçalho do menu lateral */
+#sidebar .sidebar-header img {
+    width: 150px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter proporções */
+}
+
+/* Lista de itens no menu lateral */
+#sidebar ul.components {
+    padding: 20px 0; /* Preenchimento interno */
+    list-style: none; /* Remove marcadores de lista */
+}
+
+#sidebar ul li {
+    padding: 10px; /* Espaçamento interno dos itens */
+    font-size: 1.1em; /* Tamanho da fonte */
+}
+
+#sidebar ul li a {
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Preenchimento interno */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: block; /* Transforma em bloco para ocupar a largura total */
+    transition: 0.3s; /* Transição suave para efeitos visuais */
+}
+
+#sidebar ul li a:hover {
+    background: #555; /* Cor de fundo ao passar o mouse */
+}
+
+#sidebar ul li.active > a {
+    background-color: #555; /* Cor de fundo do item ativo */
+}
+
+/* Conteúdo principal deslocado para a direita para acomodar o menu lateral */
+#content {
+    margin-left: 250px; /* Ajuste para o espaço do menu lateral */
+    padding: 20px; /* Preenchimento interno */
+    width: calc(100% - 250px); /* Ajuste para o espaço do menu lateral */
+    overflow-y: auto; /* Adiciona rolagem vertical ao conteúdo principal quando necessário */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 40px 0; /* Preenchimento interno */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+}
+
+/* Estilo para as seções */
+section {
+    background-color: #fff; /* Cor de fundo */
+    padding: 40px 20px; /* Preenchimento interno */
+    margin-top: 20px; /* Margem superior */
+}
+
+section h2 {
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+section p {
+    font-size: 1.1rem; /* Tamanho da fonte do parágrafo */
+    line-height: 1.8; /* Altura da linha */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para a imagem do SWOT */
+.image-container {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Margem superior */
+}
+
+.image-container img {
+    max-width: 70%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática para manter proporções */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Ocupa toda a largura */
+    position: relative; /* Ajuste conforme necessário */
+}

@@ -1,0 +1,29 @@
+/* Estilos específicos para a página de Análise de Mercado */
+
+/* Estilo para todos os textos dentro da seção #analise-mercado */
+#analise-mercado {
+    color: #000; /* Cor do texto */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+}
+
+/* Estilo para os títulos (h2) dentro da seção #analise-mercado */
+#analise-mercado h2 {
+    font-size: 2rem; /* Tamanho da fonte */
+    margin-top: 40px; /* Margem superior */
+    margin-bottom: 10px; /* Margem inferior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para a lista de Principais Concorrentes */
+#analise-mercado ul {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    margin-bottom: 20px; /* Margem inferior */
+    list-style-type: disc; /* Tipo de marcador da lista */
+    padding-left: 20px; /* Espaçamento à esquerda da lista */
+}
+
+#analise-mercado ul li {
+    margin-bottom: 8px; /* Espaçamento entre itens da lista */
+}

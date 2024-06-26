@@ -1,0 +1,117 @@
+/* Estilos para o formulário de contato */
+#fale-conosco {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+#fale-conosco .form-group {
+    margin-bottom: 15px;
+}
+
+#fale-conosco input[type="text"],
+#fale-conosco input[type="email"],
+#fale-conosco textarea {
+    width: calc(50% - 10px); /* Define a largura dos inputs */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#fale-conosco textarea {
+    resize: vertical;
+    height: 120px; /* Altura inicial para a área de texto */
+}
+
+#fale-conosco #contador-caracteres {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+#fale-conosco button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#fale-conosco button:hover {
+    background-color: #555;
+}
+
+/* Ajuste para o input de Assunto */
+#fale-conosco input[type="text"]#assunto {
+    width: calc(100% - 20px); /* Ajusta para ocupar a largura total */
+}
+
+/* Ajuste para a textarea de Mensagem */
+#fale-conosco textarea#mensagem {
+    width: calc(100% - 20px); /* Ajusta para ocupar a largura total */
+}
+
+/* Estilos para os ícones de contato */
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.icons .icon {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.icons img {
+    width: 70px; /* Largura fixa para as imagens dos ícones */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-bottom: 10px;
+}
+
+.icons p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.icons a {
+    color: #333;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query para ajustar os inputs em telas menores */
+@media (max-width: 768px) {
+    #fale-conosco input[type="text"],
+    #fale-conosco input[type="email"],
+    #fale-conosco textarea {
+        width: 100%; /* Define a largura total em telas menores */
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Ajuste para o conteúdo principal */
+#content {
+    padding-bottom: 60px; /* Ajusta o espaço para o rodapé */
+}

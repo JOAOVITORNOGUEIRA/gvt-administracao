@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - GVT Administração</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Adicione aqui seu arquivo CSS específico -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="../../../imagens/logo.png" alt="Logo do Projeto">
+            </div>
+            <ul class="list-unstyled components">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../Sobre/index.html">Sobre</a></li>
+                <li><a href="../Servicos/index.html">Serviços</a></li>
+                <li><a href="../AnaliseMercado/index.html">Análise de Mercado</a></li>
+                <li><a href="../Estrategia/index.html">Estratégia</a></li>
+                <li class="active"><a href="index.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <div id="content">
+            <header>
+                <h1>Fale Conosco</h1>
+            </header>
+
+            <!-- Ícones e links -->
+            <div class="icons">
+                <div class="icon">
+                    <img src="../../../imagens/phone.png" alt="Telefone">
+                    <p><a href="https://api.whatsapp.com/send?phone=+5524988375372&text=Ol%C3%A1%21" target="_blank">(24) 98837-5372</a></p>
+                </div>
+                <div class="icon">
+                    <img src="../../../imagens/insta.png" alt="Instagram">
+                    <p><a href="https://www.instagram.com/_gxxvxnny_lxxs/" target="_blank">@GVTAdmnistração</a></p>
+                </div>
+                <div class="icon">
+                    <img src="../../../imagens/email.png" alt="Email">
+                    <p><a href="mailto:exemplo@exemplo.com.br">administração@gvt.com.br </a></p>
+                </div>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <section id="fale-conosco">
+                <div class="container">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Mensagem"></textarea>
+                            <div id="contador-caracteres">1000 caracteres restantes</div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../../../js/main.js"></script>
+</body>
+
+</html>
